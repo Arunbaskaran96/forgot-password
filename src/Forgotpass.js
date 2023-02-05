@@ -10,7 +10,10 @@ function Forgotpass() {
     validate: () => {},
     onSubmit: async (values) => {
       try {
-        await axios.post("http://localhost:8000/forgot", values);
+        await axios.post(
+          "https://forgotpassword-g94p.onrender.com/forgot",
+          values
+        );
         alert("Check your registered email");
       } catch (error) {
         console.log(error);
