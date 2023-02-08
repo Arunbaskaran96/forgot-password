@@ -46,12 +46,17 @@ function Login() {
             type="password"
           ></input>
           <br></br>
-          <input type="submit" value="Login"></input>
+          <input
+            style={{ marginLeft: "60px" }}
+            className="btn btn-primary"
+            type="submit"
+            value="Login"
+          ></input>
           <br></br>
         </div>
       </form>
       <div>
-        <Link className="btn" to="/forgot">
+        <Link className="btn btn-info" to="/forgot">
           Forgot password
         </Link>
       </div>

@@ -3,6 +3,7 @@ import Login from "./Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Forgotpass from "./Forgotpass";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
