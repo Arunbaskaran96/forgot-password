@@ -16,7 +16,7 @@ function Register() {
     onSubmit: async (values) => {
       try {
         await axios.post(
-          "https://forgotpassword-g94p.onrender.com/G6Ma9",
+          "https://forgotpassword-g94p.onrender.com/user",
           values
         );
         nav("/");
