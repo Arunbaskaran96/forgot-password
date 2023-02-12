@@ -13,10 +13,7 @@ function Login() {
     validate: () => {},
     onSubmit: async (values) => {
       try {
-        await axios.post(
-          "https://forgotpassword-g94p.onrender.com/login",
-          values
-        );
+        await axios.post("https://localhost:8000/login", values);
         nav("/home");
       } catch (error) {
         console.log(error);
@@ -56,8 +53,13 @@ function Login() {
         </div>
       </form>
       <div>
-        <Link className="btn btn-info" to="/forgot">
+        <Link className="btn btn-info" to="/tK5Cb">
           Forgot password
+        </Link>
+      </div>
+      <div>
+        <Link to="/register-user" className="btn btn-success">
+          Register
         </Link>
       </div>
     </div>
