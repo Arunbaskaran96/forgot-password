@@ -15,7 +15,10 @@ function Register() {
     validate: () => {},
     onSubmit: async (values) => {
       try {
-        await axios.post("http://localhost:8000/G6Ma9", values);
+        await axios.post(
+          "https://forgotpassword-g94p.onrender.com/G6Ma9",
+          values
+        );
         nav("/");
       } catch (error) {
         console.log(error);

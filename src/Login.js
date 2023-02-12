@@ -13,7 +13,10 @@ function Login() {
     validate: () => {},
     onSubmit: async (values) => {
       try {
-        await axios.post("https://localhost:8000/login", values);
+        await axios.post(
+          "https://forgotpassword-g94p.onrender.com/login",
+          values
+        );
         nav("/home");
       } catch (error) {
         console.log(error);
